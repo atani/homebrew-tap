@@ -1,9 +1,9 @@
 class Glowm < Formula
   desc "Glow-like Markdown CLI with Mermaid diagrams (iTerm2/Kitty inline images + PDF)"
   homepage "https://github.com/atani/glowm"
-  url "https://github.com/atani/glowm/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "76d3bf50234b64ce71938e3e7d3727871b5ecf6fc7d8165bd2470f8c0c0173bd"
-  version "0.1.0"
+  url "https://github.com/atani/glowm/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "487861731cca9b40e7c59e36d4c211e7f9f8620368bdf895964799f9bb19be49"
+  version "0.1.1"
 
   depends_on "go" => :build
 
