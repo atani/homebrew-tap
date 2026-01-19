@@ -23,3 +23,11 @@ Or install the latest development version:
 ```bash
 brew install --HEAD atani/tap/lazyccg
 ```
+
+### glowm
+
+Glow-like Markdown CLI with Mermaid diagrams (iTerm2/Kitty inline images + PDF).
+
+```bash
+brew install atani/tap/glowm
+```
