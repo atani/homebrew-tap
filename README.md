@@ -24,6 +24,14 @@ Or install the latest development version:
 brew install --HEAD atani/tap/lazyccg
 ```
 
+### gh-attach
+
+Upload images to GitHub Issue/PR comments via browser automation.
+
+```bash
+brew install atani/tap/gh-attach
+```
+
 ### glowm
 
 Glow-like Markdown CLI with Mermaid diagrams (iTerm2/Kitty inline images + PDF).
