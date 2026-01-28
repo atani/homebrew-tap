@@ -1,8 +1,8 @@
 class GhAttach < Formula
   desc "Upload images to GitHub Issue/PR comments"
   homepage "https://github.com/atani/gh-attach"
-  url "https://github.com/atani/gh-attach/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "72e611d900af52078f4bd55580eb475c599721fa47dcb9e330eb26be7d97076f"
+  url "https://github.com/atani/gh-attach/archive/refs/tags/v0.5.2.tar.gz"
+  sha256 "e433e1359a97cf7e64e9f1f57706903de99520f886980542610203d7a8676394"
   license "MIT"
 
   depends_on "gh"
