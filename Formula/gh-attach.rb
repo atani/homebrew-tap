@@ -1,19 +1,17 @@
 class GhAttach < Formula
   desc "Upload images to GitHub Issue/PR comments"
   homepage "https://github.com/atani/gh-attach"
-  url "https://github.com/atani/gh-attach/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "d3c81876be17c26b86f89b97a7e77363c9c51cc62a963815409f7093ee9cde67"
+  url "https://github.com/atani/gh-attach/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "5ea35593d201841d49b5dc0c17e176558f3dc1c4957ce835f0c8cebacc122db3"
   license "MIT"
 
   depends_on "gh"
   depends_on "node"
 
   def install
+    # Install playwright-cli locally to avoid global npm issues
+    system "npm", "install", "--prefix", libexec, "@playwright/mcp"
     bin.install "bin/gh-attach"
-  end
-
-  def post_install
-    system "npm", "install", "-g", "@playwright/mcp"
   end
 
   def caveats
