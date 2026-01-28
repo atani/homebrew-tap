@@ -1,8 +1,8 @@
 class GhAttach < Formula
   desc "Upload images to GitHub Issue/PR comments"
   homepage "https://github.com/atani/gh-attach"
-  url "https://github.com/atani/gh-attach/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "2cf6b585d846c6ad7f24a3a671d5abc6d807f0b2764338a9c2f21eec1a667fba"
+  url "https://github.com/atani/gh-attach/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "2b96f378f245b6bf9ab518058d4a8e888ad5403b5d93a9f913c0aa9651cf9be6"
   license "MIT"
 
   depends_on "gh"
@@ -16,11 +16,15 @@ class GhAttach < Formula
 
   def caveats
     <<~EOS
-      First run: login to GitHub in browser (one time only):
-        gh-attach --issue 1 --image ./test.png --headed
+      Usage modes:
 
-      Then use normally:
-        gh-attach --issue 123 --image ./screenshot.png
+      1. Release mode (recommended for GHE/SSO):
+         gh-attach --issue 123 --image ./screenshot.png --release
+
+      2. Browser mode (requires one-time login):
+         gh-attach --issue 1 --image ./test.png --headed
+         Then use normally:
+         gh-attach --issue 123 --image ./screenshot.png
     EOS
   end
 
