@@ -5,10 +5,8 @@ Homebrew formulae for atani's projects.
 ## Installation
 
 ```bash
-brew tap atani/tap
+brew install atani/tap/<formula>
 ```
-
-## Available Formulae
 
 | Formula | Description |
 |---------|-------------|
@@ -17,7 +15,3 @@ brew tap atani/tap
 | lazyccg | TUI dashboard for monitoring Claude Code / Codex / Gemini sessions |
 | gh-attach | Upload images to GitHub Issue/PR comments |
 | brew-discover | Discover new Homebrew packages |
-
-```bash
-brew install atani/tap/<formula>
-```
