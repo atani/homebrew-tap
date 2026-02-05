@@ -12,13 +12,21 @@ brew tap atani/tap
 
 | Formula | Description |
 |---------|-------------|
+| [glowm](#glowm) | Glow-like Markdown CLI with Mermaid diagrams |
 | [sqlex](#sqlex) | SQL syntax checker and linter |
 | [lazyccg](#lazyccg) | TUI dashboard for monitoring Claude Code / Codex / Gemini sessions |
-| [glowm](#glowm) | Glow-like Markdown CLI with Mermaid diagrams |
 | [gh-attach](#gh-attach) | Upload images to GitHub Issue/PR comments |
 | [brew-discover](#brew-discover) | Discover new Homebrew packages |
 
 ---
+
+### glowm
+
+Glow-like Markdown CLI with Mermaid diagrams (iTerm2/Kitty inline images + PDF).
+
+```bash
+brew install atani/tap/glowm
+```
 
 ### sqlex
 
@@ -40,14 +48,6 @@ Or install the latest development version:
 
 ```bash
 brew install --HEAD atani/tap/lazyccg
-```
-
-### glowm
-
-Glow-like Markdown CLI with Mermaid diagrams (iTerm2/Kitty inline images + PDF).
-
-```bash
-brew install atani/tap/glowm
 ```
 
 ### gh-attach
