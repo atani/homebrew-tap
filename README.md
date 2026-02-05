@@ -12,56 +12,12 @@ brew tap atani/tap
 
 | Formula | Description |
 |---------|-------------|
-| [glowm](#glowm) | Glow-like Markdown CLI with Mermaid diagrams |
-| [sqlex](#sqlex) | SQL syntax checker and linter |
-| [lazyccg](#lazyccg) | TUI dashboard for monitoring Claude Code / Codex / Gemini sessions |
-| [gh-attach](#gh-attach) | Upload images to GitHub Issue/PR comments |
-| [brew-discover](#brew-discover) | Discover new Homebrew packages |
-
----
-
-### glowm
-
-Glow-like Markdown CLI with Mermaid diagrams (iTerm2/Kitty inline images + PDF).
+| glowm | Glow-like Markdown CLI with Mermaid diagrams |
+| sqlex | SQL syntax checker and linter |
+| lazyccg | TUI dashboard for monitoring Claude Code / Codex / Gemini sessions |
+| gh-attach | Upload images to GitHub Issue/PR comments |
+| brew-discover | Discover new Homebrew packages |
 
 ```bash
-brew install atani/tap/glowm
-```
-
-### sqlex
-
-SQL syntax checker and linter written in Rust. Supports MySQL, PostgreSQL, SQLite, BigQuery.
-
-```bash
-brew install atani/tap/sqlex
-```
-
-### lazyccg
-
-TUI dashboard for monitoring Claude Code / Codex / Gemini sessions in kitty terminal.
-
-```bash
-brew install atani/tap/lazyccg
-```
-
-Or install the latest development version:
-
-```bash
-brew install --HEAD atani/tap/lazyccg
-```
-
-### gh-attach
-
-Upload images to GitHub Issue/PR comments via browser automation.
-
-```bash
-brew install atani/tap/gh-attach
-```
-
-### brew-discover
-
-Discover new Homebrew packages.
-
-```bash
-brew install atani/tap/brew-discover
+brew install atani/tap/<formula>
 ```
