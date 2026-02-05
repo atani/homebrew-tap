@@ -1,6 +1,6 @@
 # Homebrew Tap
 
-Tools that make terminal life easier.
+✨ Tools that make terminal life easier.
 
 ## Installation
 
