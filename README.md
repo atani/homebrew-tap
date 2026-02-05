@@ -5,7 +5,8 @@ Homebrew formulae for atani's projects.
 ## Installation
 
 ```bash
-brew install atani/tap/<formula>
+brew tap atani/tap
+brew install <formula>
 ```
 
 | Formula | Description |
