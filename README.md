@@ -1,6 +1,6 @@
 # Homebrew Tap
 
-Homebrew formulae for atani's projects.
+Tools that make terminal life easier.
 
 ## Installation
 
