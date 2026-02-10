@@ -6,6 +6,7 @@ class GhAttach < Formula
   license "MIT"
 
   depends_on "gh"
+  depends_on "jq"
   depends_on "node"
 
   def install
@@ -18,10 +19,14 @@ class GhAttach < Formula
     <<~EOS
       Usage modes:
 
-      1. Release mode (recommended for GHE/SSO):
+      1. Release mode (no browser needed):
          gh-attach --issue 123 --image ./screenshot.png --release
 
-      2. Browser mode (requires one-time login):
+      2. Direct mode (auto for configured hosts):
+         echo "direct_hosts=your-ghe-host.com" > ~/.config/gh-attach/config
+         gh-attach --issue 123 --image ./screenshot.png --host your-ghe-host.com
+
+      3. Browser mode (requires one-time login):
          gh-attach --issue 1 --image ./test.png --headed
          Then use normally:
          gh-attach --issue 123 --image ./screenshot.png
