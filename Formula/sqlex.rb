@@ -1,26 +1,26 @@
 class Sqlex < Formula
   desc "SQL syntax checker and linter"
   homepage "https://github.com/atani/sqlex"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/atani/sqlex/releases/download/v0.3.0/sqlex-darwin-x86_64"
-      sha256 "fb2afce2b4f7a1c87f3b6824a21c88ca0da7867f317fc4e30b151c5993a674c2"
+      url "https://github.com/atani/sqlex/releases/download/v0.3.1/sqlex-darwin-x86_64"
+      sha256 "41db6000988695674788d4ddd14f08b307f77468d8d4bcda2e73618716228f6e"
     else
-      url "https://github.com/atani/sqlex/releases/download/v0.3.0/sqlex-darwin-aarch64"
-      sha256 "0ebfa47033e8ee4ac95dcc421473296c4a61667e2822e157c45896ef73a6fa4f"
+      url "https://github.com/atani/sqlex/releases/download/v0.3.1/sqlex-darwin-aarch64"
+      sha256 "bddf696d8633be007060c78d0a80d66b00dcd1dc7dfbb67199f18bd42b35a6b1"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/atani/sqlex/releases/download/v0.3.0/sqlex-linux-x86_64"
-      sha256 "fc100e067dfc7f43987ed6f4ab531db99ec99024beb4a411ac1d80c07c7b97be"
+      url "https://github.com/atani/sqlex/releases/download/v0.3.1/sqlex-linux-x86_64"
+      sha256 "a5e3147be7532499bfbe5163841cfbb237375d1672417a95d78c3f4c853a4912"
     else
-      url "https://github.com/atani/sqlex/releases/download/v0.3.0/sqlex-linux-aarch64"
-      sha256 "43a3b641b4c6b04ab31f68130d9be9a21183d2cd5b55277009177804d909617d"
+      url "https://github.com/atani/sqlex/releases/download/v0.3.1/sqlex-linux-aarch64"
+      sha256 "bf61882b9ef72630c6510a65b102a6f0e14117659b8614910489a19bbed58dda"
     end
   end
 
