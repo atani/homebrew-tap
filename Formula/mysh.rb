@@ -1,8 +1,9 @@
 class Mysh < Formula
-  desc "MySQL connection manager with SSH tunnel support"
+  desc "MySQL connection manager with SSH tunnel support and AI-safe output masking"
   homepage "https://github.com/atani/mysh"
-  url "https://github.com/atani/mysh/archive/refs/tags/v0.0.8.tar.gz"
-  sha256 "5bf312051a24e66965d14f62d2af5a60cd50071597d6b39acc6483ff9ae974d1"
+  url "https://github.com/atani/mysh/archive/refs/tags/v0.0.9.tar.gz"
+  sha256 "79477fad2f7fc5a59105322b9c519172ce7f3ec8a6a69ad61368f44f62ed0884"
+  head "https://github.com/atani/mysh.git", branch: "main"
 
   depends_on "go" => :build
 
@@ -12,6 +13,6 @@ class Mysh < Formula
   end
 
   test do
-    assert_match "mysh - MySQL connection manager", shell_output("#{bin}/mysh help")
+    assert_match "MySQL connection manager", shell_output("#{bin}/mysh help")
   end
 end
