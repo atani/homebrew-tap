@@ -15,4 +15,5 @@ brew install <formula>
 | [sqlex](https://github.com/atani/sqlex) | SQL syntax checker and linter |
 | [lazyccg](https://github.com/atani/lazyccg) | TUI dashboard for monitoring Claude Code / Codex / Gemini sessions |
 | [gh-attach](https://github.com/atani/gh-attach) | Upload images to GitHub Issue/PR comments |
+| [mysh](https://github.com/atani/mysh) | MySQL connection manager with SSH tunnel support |
 | [brew-discover](https://github.com/atani/brew-discover) | Discover new Homebrew packages |
