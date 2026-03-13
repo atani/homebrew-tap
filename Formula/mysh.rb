@@ -1,8 +1,8 @@
 class Mysh < Formula
   desc "MySQL connection manager with SSH tunnel support"
   homepage "https://github.com/atani/mysh"
-  url "https://github.com/atani/mysh/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "3adf8efc968b40e16c228e98c90178a27260fefd3c86e7330167b2eb7dc2d4c6"
+  url "https://github.com/atani/mysh/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "a802b499fbd590f6c473342867a179e956ae1e45caa433b6f8e3106d1cebfffe"
 
   depends_on "go" => :build
 
