@@ -1,13 +1,14 @@
 class Mysh < Formula
   desc "MySQL connection manager with SSH tunnel support"
   homepage "https://github.com/atani/mysh"
-  url "https://github.com/atani/mysh/archive/refs/tags/v0.0.3.tar.gz"
-  sha256 "82bb3227c12438ed71b4414687f52b704c16747e25e6949500cd0bb4edfc022b"
+  url "https://github.com/atani/mysh/archive/refs/tags/v0.0.4.tar.gz"
+  sha256 "4f92b9d9e591a8ffc00119dd102cc6b140a7ed44dc86358092fa57c40b5505f2"
 
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w")
+    ldflags = "-s -w -X main.version=#{version}"
+    system "go", "build", *std_go_args(ldflags: ldflags)
   end
 
   test do
