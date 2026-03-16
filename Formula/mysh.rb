@@ -25,7 +25,8 @@ class Mysh < Formula
   end
 
   def install
-    bin.install "mysh" => "mysh"
+    downloaded = Dir["mysh-*"].first || "mysh"
+    bin.install downloaded => "mysh"
   end
 
   test do
