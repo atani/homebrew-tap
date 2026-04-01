@@ -1,26 +1,26 @@
 class Mysh < Formula
   desc "MySQL connection manager with SSH tunnel support"
   homepage "https://github.com/atani/mysh"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/atani/mysh/releases/download/v0.4.0/mysh-darwin-amd64"
-      sha256 "7415d3d31668f5aa16408aee266b4468d701548d3e29af8086f2528c70bef113"
+      url "https://github.com/atani/mysh/releases/download/v0.5.0/mysh-darwin-amd64"
+      sha256 "3081bfe455536aa2b0dce023b9696ee2f9e4f796d24ba647b96750cfa999df08"
     else
-      url "https://github.com/atani/mysh/releases/download/v0.4.0/mysh-darwin-arm64"
-      sha256 "4daf44dcdc71a9fbc62247f63d32d5e912c303b9c827e869d85c43c974a88827"
+      url "https://github.com/atani/mysh/releases/download/v0.5.0/mysh-darwin-arm64"
+      sha256 "f795c2889fa0b8bb01c82ae3ba9148e946b7f28be7c9cbb694e5e4b04482d269"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/atani/mysh/releases/download/v0.4.0/mysh-linux-amd64"
-      sha256 "4693a53237419165c651e61d5f0dd555f4c9a6f012baa79f8fddef238b7fafd3"
+      url "https://github.com/atani/mysh/releases/download/v0.5.0/mysh-linux-amd64"
+      sha256 "441f116829dcf751b4160020c52e4d70e13b886e241ac61e8312b5281d35a6bd"
     else
-      url "https://github.com/atani/mysh/releases/download/v0.4.0/mysh-linux-arm64"
-      sha256 "5cbf1cab8467d51dd1ea093c2bc544b3624556894216238d41d1e4cf34f34bf3"
+      url "https://github.com/atani/mysh/releases/download/v0.5.0/mysh-linux-arm64"
+      sha256 "7ec9e3bc76c38aeaf665575bdf3b86ffc0483fd8b82307891233db149635322b"
     end
   end
 
