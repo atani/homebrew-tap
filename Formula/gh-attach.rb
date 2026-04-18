@@ -10,24 +10,27 @@ class GhAttach < Formula
   license "MIT"
 
   depends_on "gh"
-  depends_on "node" => :optional
-  depends_on "jq" => :optional
+  depends_on "jq"
+  depends_on "node"
 
   def install
-    bin.install "bin/gh-attach"
+    # Install the script into libexec so its sibling ../libexec lookup resolves,
+    # and bundle playwright-cli under libexec/node_modules so a single
+    # `brew install` gives a working setup (no separate npm install needed).
+    libexec.install "bin/gh-attach"
+    system Formula["node"].opt_bin/"npm", "install", "--prefix", libexec, "@playwright/mcp"
+    (bin/"gh-attach").write_env_script libexec/"gh-attach",
+      PATH: "#{libexec}/node_modules/.bin:$PATH"
   end
 
   def caveats
     <<~EOS
-      gh-attach needs playwright-cli for browser/direct upload modes:
-
-        npm install -g @playwright/mcp
-
       For hosts behind SSO (eg. GitHub Enterprise with SAML), log in once
-      against a named persistent session, then reuse it:
+      against a named persistent playwright-cli session and reuse it:
 
         playwright-cli --session ghe open --persistent https://ghe.example.com
-        gh-attach --session ghe --keep-session --browser ...
+        gh-attach --session ghe --keep-session --browser --url-only \\
+          --host ghe.example.com --repo owner/repo --issue 1 --image a.png
 
       See https://github.com/atani/gh-attach#readme for full usage.
     EOS
