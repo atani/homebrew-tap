@@ -6,7 +6,6 @@ class GhAttach < Formula
   homepage "https://github.com/atani/gh-attach"
   url "https://github.com/atani/gh-attach/archive/refs/tags/v0.7.2.tar.gz"
   sha256 "f65f6a946ee2f2c37a36a59ec6cf777e592c52c6e2b2118ee81e2d6ac68680a1"
-  version "0.7.1"
   license "MIT"
 
   depends_on "gh"
