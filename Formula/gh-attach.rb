@@ -18,7 +18,7 @@ class GhAttach < Formula
     # and bundle playwright-cli under libexec/node_modules so a single
     # `brew install` gives a working setup (no separate npm install needed).
     libexec.install "bin/gh-attach"
-    system Formula["node"].opt_bin/"npm", "install", "--prefix", libexec, "@playwright/mcp"
+    system Formula["node"].opt_bin/"npm", "install", "--prefix", libexec, "@playwright/cli"
     (bin/"gh-attach").write_env_script libexec/"gh-attach",
       PATH: "#{libexec}/node_modules/.bin:$PATH"
   end
