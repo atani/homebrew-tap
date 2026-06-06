@@ -5,21 +5,21 @@
 class Glowm < Formula
   desc "Glow-like Markdown CLI with Mermaid diagrams (iTerm2/Kitty inline images + PDF)"
   homepage "https://github.com/atani/glowm"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/atani/glowm/releases/download/v0.3.1/glowm_0.3.1_darwin_amd64.tar.gz"
-      sha256 "1fbf77c7b0aaae8cbd2a2339a405cde5c28bf53127e2ca8fedaedfb3116a1dda"
+      url "https://github.com/atani/glowm/releases/download/v0.3.2/glowm_0.3.2_darwin_amd64.tar.gz"
+      sha256 "8d7cc3180972f859af1c32e2fba8c7304f3255bf75e7cac6966b81df2b13d97e"
 
       define_method(:install) do
         bin.install "glowm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/atani/glowm/releases/download/v0.3.1/glowm_0.3.1_darwin_arm64.tar.gz"
-      sha256 "e16b99ceee4af444949e6b667442157ae7660940da3d575748dee76ad6024ca1"
+      url "https://github.com/atani/glowm/releases/download/v0.3.2/glowm_0.3.2_darwin_arm64.tar.gz"
+      sha256 "1acd946b1cea58c2e2308f5228ca3e1760d027894f8700e545597ff75a194c57"
 
       define_method(:install) do
         bin.install "glowm"
@@ -29,15 +29,15 @@ class Glowm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atani/glowm/releases/download/v0.3.1/glowm_0.3.1_linux_amd64.tar.gz"
-      sha256 "73be00e0831edd5cd270a22df7898b5877f00e43e0e219c6f46ea61269a7e3ca"
+      url "https://github.com/atani/glowm/releases/download/v0.3.2/glowm_0.3.2_linux_amd64.tar.gz"
+      sha256 "d89d23e22fd6aaa15b0871cb5d997a1e784fddfa049765b660dfb7c1f70690e1"
       define_method(:install) do
         bin.install "glowm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atani/glowm/releases/download/v0.3.1/glowm_0.3.1_linux_arm64.tar.gz"
-      sha256 "e6fdee2321ff0ba64e883aa1014c32a855505d587a9739862954d7b19894a031"
+      url "https://github.com/atani/glowm/releases/download/v0.3.2/glowm_0.3.2_linux_arm64.tar.gz"
+      sha256 "dc72d2eb6336a940ede6eb1e991aaeb1ff72c030f205f282980ad5a142771bd6"
       define_method(:install) do
         bin.install "glowm"
       end
