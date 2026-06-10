@@ -1,17 +1,15 @@
 class Ctxpack < Formula
-  include Language::Python::Virtualenv
-
   desc "Token-aware context extraction for AI agents"
   homepage "https://github.com/atani/ctxpack"
-  url "https://github.com/atani/ctxpack/archive/refs/tags/ctxpack-v0.2.0.tar.gz"
-  sha256 "5eb995a8c220a6c9e11cec5ccbd9a65447152ac5b3777c237dc5f9e3b51f8c45"
+  url "https://github.com/atani/ctxpack/archive/refs/tags/ctxpack-v0.3.0.tar.gz"
+  sha256 "1214a1066ec9f06d4b4e6aafa894953c3122e2a469003f42f765b7d9167ec39c"
   license "MIT"
   head "https://github.com/atani/ctxpack.git", branch: "main"
 
-  depends_on "python@3.13"
+  depends_on "go" => :build
 
   def install
-    virtualenv_install_with_resources
+    system "go", "build", *std_go_args(ldflags: "-s -w -X main.version=#{version}"), "./cmd/ctxpack"
   end
 
   test do
