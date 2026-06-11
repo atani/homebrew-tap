@@ -1,8 +1,8 @@
 class Ctxpack < Formula
   desc "Token-aware context extraction for AI agents"
   homepage "https://github.com/atani/ctxpack"
-  url "https://github.com/atani/ctxpack/archive/refs/tags/ctxpack-v0.3.0.tar.gz"
-  sha256 "1214a1066ec9f06d4b4e6aafa894953c3122e2a469003f42f765b7d9167ec39c"
+  url "https://github.com/atani/ctxpack/archive/refs/tags/ctxpack-v0.4.0.tar.gz"
+  sha256 "84b4cb94feedbedbdf0e7ec4812841aea9c4986023c57be57f225f8b8fbfdcdc"
   license "MIT"
   head "https://github.com/atani/ctxpack.git", branch: "main"
 
