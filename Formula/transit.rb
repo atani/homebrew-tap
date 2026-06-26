@@ -1,8 +1,8 @@
 class Transit < Formula
   desc "Japan transit routes and station departures CLI"
   homepage "https://github.com/atani/transit"
-  url "https://github.com/atani/transit/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "ebb23f42d5375f09d03413698e1b72e1fa52f7322691c66e8b3158bec77e42b5"
+  url "https://github.com/atani/transit/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "88a616959e003df3bc4f6418b053445f92635ba4f1597859b15536cf7aac87bf"
   license "MIT"
   head "https://github.com/atani/transit.git", branch: "main"
 
